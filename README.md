@@ -6,10 +6,10 @@ for performing triangle-wye (also delta-wye or &Delta;Y)
 and wye-triangle (also wye-delta or Y&Delta;) 
 transforms on simple undirected graphs.
 
-  ADD A GRAPHIC!
+  ![laskfj](https://raw.githubusercontent.com/mikepierce/YTYGraphTransforms/master/images/tyyt.png)
 
 The main feature of this package is the function `WyeTriangleWyeFamily` 
-that can efficiently generate all (or some) graphs that are the result of 
+that can efficiently generate all (or a selection of) graphs that are the result of 
 any sequence of triangle-wye or wye-triangle transforms on a graph.
 
 For further reading, see:
