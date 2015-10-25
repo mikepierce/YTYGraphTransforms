@@ -6,7 +6,7 @@ for performing triangle-wye (also delta-wye or &Delta;Y)
 and wye-triangle (also wye-delta or Y&Delta;) 
 transforms on simple undirected graphs.
 
-  ![laskfj](https://raw.githubusercontent.com/mikepierce/YTYGraphTransforms/master/images/tyyt.png)
+  ![triangle-wye and wye-triangle](https://raw.githubusercontent.com/mikepierce/YTYGraphTransforms/master/images/tyyt.png)
 
 The main feature of this package is the function `WyeTriangleWyeFamily` 
 that can efficiently generate all (or a selection of) graphs that are the result of 
@@ -89,7 +89,7 @@ For further reading, see:
    transforms on *g* with a few optional conditions:
    
     - *Limit* is a positive integer such that the function will produce only 
-      the graphs that are no more than *Limit* triangle-wye and wye-triangle  
+      the graphs that are no more than *Limit* triangle-wye and wye-triangle
       transforms from *g*.
     
     - Set *ProgressFlag* to `True` to print some output to indicate the 
