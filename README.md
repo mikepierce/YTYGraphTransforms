@@ -36,14 +36,14 @@ For further reading, see:
    given by vertices *{a, b, c}* in graph *g* by deleting any edges among the 
    vertices *{a, b, c}* and adding a new vertex incident to each of *{a, b, c}*.
 
- - `TriangleWyeChildren[g]` returns every graph (distinct under isomorphism) 
+ - `TriangleWyeChildren[g]` returns every graph (distinct up to isomorphism) 
    that can be created by performing a triangle-wye transform 
    on some triangle in *g*. Relies on function `TriangleWye`.
 
  - `TriangleWyeDescendants[g]` returns a nested list of all 
    (not necessarily distinct) graphs that can be created by performing 
    a sequence of triangle-wye transforms on *g*. 
-   The nested lists keep track of the family heritage and look like 
+   The nested lists keep track of the family heritage and looks like 
    `{graph, TriangleWyeDescendants /@ TriangleWyeChildren[graph]}`. 
    Relies on function `TriangleWyeChildren`.  
 
@@ -55,7 +55,7 @@ For further reading, see:
    in graph *g* by deleting *v* and forming a 3-cycle among the neighbors of *v*. 
    This function fails if `VertexDegree[g, v] != 3`.
 
- - `WyeTriangleParents[g]` returns every graph (distinct under isomorphism) 
+ - `WyeTriangleParents[g]` returns every graph (distinct up to isomorphism) 
    that can be created by performing a wye-triangle transform 
    on some degree 3 vertex in *g*. Relies on function `WyeTriangle`.
 
@@ -66,7 +66,7 @@ For further reading, see:
  - `WyeTriangleAncestors[g]` returns a nested list of all 
    (not necessarily distinct) graphs that can be created by performing a 
    sequence of wye-triangle transforms on *g*. The nested lists keep track of 
-   the family heritage and look like 
+   the family heritage and looks like 
    `{graph, WyeTriangleAncestors /@ WyeTriangleParents[graph]}`. 
    Relies on function `WyeTriangleParents`.
 
