@@ -1,12 +1,13 @@
-
 # Wye-Triangle-Wye Graph Transforms
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Mathematica package that contains functions 
 for performing triangle-wye (also delta-wye or &Delta;Y) 
 and wye-triangle (also wye-delta or Y&Delta;) 
 transforms on simple undirected graphs.
 
-  ![triangle-wye and wye-triangle](https://raw.githubusercontent.com/mikepierce/YTYGraphTransforms/master/images/tyyt.png)
+![triangle-wye and wye-triangle](https://raw.githubusercontent.com/mikepierce/YTYGraphTransforms/master/images/tyyt.png)
 
 The main feature of this package is the function `WyeTriangleWyeFamily` 
 that can efficiently generate all (or a selection of) graphs that are the result of 
@@ -15,10 +16,10 @@ any sequence of triangle-wye or wye-triangle transforms on a graph.
 For further reading, see:
 
  - [Y-&Delta; Transform Wikipedia Article][YTWIKI]
- - [*Delta-wye-delta transformations: algorithms and applications*][DWDTAA], Isidoro Gitler
- - [*More Forbidden Minors for Wye-Delta-Wye Reducibility*][MFMYDYR], Yaming Yu ([pdf][MFMYDYR-pdf])
- - [*On the delta-wye reduction for planar graphs*][ODWRPG], K. Truemper
- - [*Four-terminal reducibility and projective-planar wye-delta-wye-reducible graphs*][FTRPPWDWRG], Archdeacon, Colbourn2, Gitler, and Provan ([pdf][FTRPPWDWRG-pdf])
+ - [Delta-wye-delta transformations: algorithms and applications][DWDTAA], Isidoro Gitler
+ - [More Forbidden Minors for Wye-Delta-Wye Reducibility][MFMYDYR], Yaming Yu ([pdf][MFMYDYR-pdf])
+ - [On the delta-wye reduction for planar graphs][ODWRPG], K. Truemper
+ - [Four-terminal reducibility and projective-planar wye-delta-wye-reducible graphs][FTRPPWDWRG], Archdeacon, etal ([pdf][FTRPPWDWRG-pdf])
  
   [YTWIKI]: https://en.wikipedia.org/wiki/Y-%CE%94_transform
   [DWDTAA]: http://dl.acm.org/citation.cfm?id=919265
@@ -111,18 +112,12 @@ For further reading, see:
       *Condition* is `GraphQ`.
 
 
-
 # ToDo
  
- - Have some kind of code review done. See if any of the functions can be made more efficient.
-   Ask if there is some better way (that I don't already know) to organize a Mathematica package.
  - Change the *strictness* second argument in `WyeTriangleParents` and `WyeTriangleAncestors`
    and all the arguments in `WyeTriangleWyeFamily` to utilize 
    [`OptionsPattern[]`](https://reference.wolfram.com/language/ref/OptionsPattern.html) and
    [`OptionsValue[]`](https://reference.wolfram.com/language/ref/OptionValue.html).
  - Add a feature to `WyeTriangleWyeFamily` (and maybe to the Ancestor/Descendent functions too) 
    to produce a graphic of the family showing the lineage.
- - Add any other functions that are fundamental to wye-triangle or triangle-wye transforms.
- - Be open to suggestions/recommendations/requests.
-
 
